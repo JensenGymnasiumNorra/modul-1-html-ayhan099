@@ -11,20 +11,70 @@ På sidan ska det finnas:
     - Varje artikel ska ha massa text t så att man behöver skrolla (generera text med ChatGPT)
     - Minst ett ord i en paragraf ska ha en annan färg med hjälp av span-elementet
     - Länkar ska finnas högst upp på sidan som länkar till varje artikel
-    - Lägg till en a-tagg över varje div för artikeln och sätt id=”sektion1” etc….
     - Se till att du kan klicka på de 3 länkarna för att hoppa till varje artikel
 -->
 
 <!DOCTYPE html>
-<html>
-
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Bilnyheterna</title>
 </head>
+<body style="margin:0; font-family:Arial, sans-serif; line-height:1.6">
 
-<body>
+<h1 style="text-align:center; background:#333; color:white; padding:20px; margin:0">
+    Bilnyheterna
+</h1>
+
+
+<div style="text-align:center; background:#555; padding:10px;">
+    <a href="https://www.mercedes-benz.com" target="_blank" style="color:white; margin:0 15px; text-decoration:none;">Mercedes</a>
+    <a href="https://www.volvocars.com" target="_blank" style="color:white; margin:0 15px; text-decoration:none;">Volvo</a>
+    <a href="https://www.toyota.com" target="_blank" style="color:white; margin:0 15px; text-decoration:none;">Toyota</a>
+</div>
+
+    <div style="background-color:#e3f2fd; padding:20px; margin:20px;">
+        <h2>Mercedes-Benz C-klass imponerar</h2>
+        <img src="https://media.autoexpress.co.uk/image/private/s--X-WVjvBW--/f_auto,t_content-image-full-desktop@1/v1725364974/autoexpress/2024/09/C-Class%20EV%20(new%20watermark)_b7ee3d.jpg" alt="Mercedes C-klass" style="max-width:100%; height:auto;">
+        <p>
+            Den senaste <span style="color:red">Mercedes</span>-Benz C-klass erbjuder en perfekt balans mellan komfort och prestanda. 
+            Interiören är fylld med högteknologiska lösningar och lyxiga material som ger en premiumkänsla i varje detalj. 
+            Bilen är utrustad med avancerade säkerhetssystem, vilket gör den både trygg och bekväm för långa resor. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi convallis feugiat ipsum, nec ultrices erat vehicula non. 
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+            Vestibulum dapibus, nulla vitae volutpat tincidunt, felis odio ultricies justo, ut tempor mauris justo et nulla. 
+            Integer ut nisi ac sapien tempor malesuada at nec leo. Sed bibendum sapien non libero sollicitudin, sit amet hendrerit eros gravida. 
+            Nam egestas, augue ac dapibus finibus, purus odio aliquam justo, et tristique velit mauris nec orci.
+        </p>
+    </div>
+
+    <div style="background-color:#e8f5e9; padding:20px; margin:20px;">
+        <h2>Volvo XC60 – säkerhet i fokus</h2>
+        <img src="https://e7852c3a.delivery.rocketcdn.me/wp-content/uploads/2025/02/Volvo-XC60-2025-06-jpg.webp" alt="Volvo XC60" style="max-width:100%; height:auto;">
+        <p>
+            <span style="color:blue">Volvo</span> XC60 har länge varit en favorit bland familjer tack vare sin kombination av säkerhet, 
+            skandinavisk design och pålitlighet. Den nya modellen har uppdaterats med mildhybrid-teknik för att ge både lägre bränsleförbrukning 
+            och minskade utsläpp. Dessutom erbjuder bilen en rymlig interiör med hög komfortnivå och intuitiv infotainment. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim neque id justo vestibulum, a egestas turpis feugiat. 
+            Phasellus imperdiet sem et urna eleifend rhoncus. Quisque cursus dolor in nunc scelerisque porta. Integer congue vulputate urna. 
+            Proin mattis magna id interdum venenatis. Sed vel tortor porttitor, tincidunt purus nec, tempor eros. Vivamus tincidunt massa et lectus sollicitudin volutpat.
+        </p>
+    </div>
+
+    <div style="background-color:#fff3e0; padding:20px; margin:20px;">
+        <h2>Toyota Supra – sportig klassiker</h2>
+        <img src="https://di-uploads-pod11.dealerinspire.com/germaintoyotaofcolumbus/uploads/2025/07/Toyota-GR-Supra-Exterior.webp" alt="Toyota Supra" style="max-width:100%; height:auto;">
+        <p>
+            Den legendariska <span style="color:green">Toyota</span> Supra är tillbaka i modern tappning och levererar en sportig körupplevelse. 
+            Med sin turboladdade motor, distinkta design och välbalanserade chassi bjuder Supra på en riktig adrenalinkick för bilentusiaster. 
+            Modellen är ett resultat av samarbete med BMW, vilket gör att den kombinerar japansk ingenjörskonst med europeisk prestanda. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at magna sed velit elementum volutpat. Suspendisse potenti. 
+            Pellentesque ullamcorper lacus a eros malesuada, nec fermentum lacus viverra. Fusce eget posuere nulla, at pretium est. 
+            Ut a mi porta, feugiat lacus at, suscipit erat. Morbi tempor ipsum sit amet tellus viverra posuere. Cras faucibus, 
+            turpis sed efficitur sollicitudin, sapien metus vulputate libero, eget tristique nisl risus at nunc.
+        </p>
+    </div>
 
 </body>
-
 </html>
+
