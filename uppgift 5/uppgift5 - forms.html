@@ -1,0 +1,67 @@
+<!--
+Uppgift 5 - Formulär
+
+På sidan ska det finnas:
+    - Ett formulär som innehåller minst följande:
+        - Två textfält
+        - En radio-input
+        - En checkbox-input
+        - En submit-knapp som submittar formuläret och skickar användaren till en tack.html
+        - En select+option input
+        - Tydliga labels för varje input 
+        - Minst 2 delar av formuläret med fieldset
+        - En input som redan har data i sig (value-attributet)
+
+Skapa nu en ny html-fil som heter “tack.html”  som bara har en <h1> tagg som säger “TACK för att du fyllt i mitt formulär” 
+Samt en knapp som öppnar “form.html” igen (titta på förra lektionen med <a> elementet, samt se slide 7)
+Se till att när man klickar på submit-knappen i formuläret så ska tack.html visas i webbläsaren istället.
+
+-->
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Formulär</h1>
+
+    <form action="Tack.html" method="get">
+        <fieldset>
+            <legend>Uppgift</legend>
+
+            <label for="namn">Namn:</label>
+            <input type="text" id="namn" name="namn" value=""><br><br>
+
+            <label for="email">E-post:</label>
+            <input type="text" id="email" name="email"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Val</legend>
+
+            <p>Kön:</p>
+            <label>
+                <input type="radio" name="kön" value="man"> Man
+            </label>
+            <label>
+                <input type="radio" name="kön" value="kvinna"> Kvinna
+            </label><br><br>
+
+            <label>
+                <input type="checkbox" name="nyhetsbrev" value="ja"> Prenumerera på nyhetsbrev
+            </label><br><br>
+
+            <label for="favorit">Välj stad</label>
+            <select id="favorit" name="favorit">
+                <option value="rod">Stockholm</option>
+                <option value="bla">Göteborg</option>
+                <option value="gron">Malmö</option>
+            </select>
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Skicka formulär">
+    </form>
+</body>
+</html>
